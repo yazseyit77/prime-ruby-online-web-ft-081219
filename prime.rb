@@ -1,7 +1,6 @@
 # Add  code here!
 def prime?(num)
-   2.upto(num - 1) do |i|
-    return false if num % i == 0
-  end
-  true
+  return false if num < 2
+
+(2..num/2).none?{|i| n % i == 0}
 end
